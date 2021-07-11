@@ -7,11 +7,11 @@
     <title>テスト</title>
   </head>
   <body>
-    <button id="nice-button">クリックしてね</button>
     <script>
-      const button = document.getElementById("nice-button")
-      button.onclick = function() {
-        button.textContent = "「こんにちは」"
+      for (let n = 2; n <= 10; n++) {
+        if (n % 2 === 0) {
+          console.log(n)
+        }
       }
     </script>
   </body>
