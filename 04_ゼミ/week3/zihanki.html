@@ -62,11 +62,15 @@
         }
           if (jihankiMoney >= 100) {
             buyButtonTea.disabled = false;
+          }else if(jihankiMoney < 100){
+            buyButtonTea.disabled = true;
+        
+          }
+
+          if(jihankiMoney >= 150){
             buyButtonDrink.disabled = false;
           }else if(jihankiMoney < 150){
             buyButtonDrink.disabled = true;
-          }else if(jihankiMoney < 100){
-            buyButtonTea.disabled = true;
           }
         
       };
